@@ -31,6 +31,40 @@ body {
 .header a {
 	float:left;
 }
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 180px;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 40px;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #db7093;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 /* Style the top navigation bar */
 .topnav {
@@ -115,36 +149,3 @@ khi màn hình có chiều rộng dưới 300px  */
     width: 100%;
   }
 }
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: right;
-  width: 180px;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: right;
-  width: 40px;
-  padding: 10px;
-  background: black;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #db7093;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-

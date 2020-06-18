@@ -125,19 +125,24 @@ form.example::after {
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 20%;
-  margin: 10px;
+  width: 100%;
+  margin: 20px;
   text-align: center;
   font-family: arial;
   float:left;
 
 }
-
+.card h1{
+	color:red;
+}
 .price {
   color: red;
   font-size: 22px;
 }
-
+.card button a{
+	text-decoration: none;
+	color:white;
+}
 .card button {
   border: none;
   outline: 0;

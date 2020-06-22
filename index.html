@@ -3,6 +3,20 @@
 <head>
 <link rel="stylesheet" href="resouces/css/mycss.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript"> 
+		function validateForm()  {
+             var u = document.getElementById("search").value;
+                if(u== "") {
+                 alert("Please enter your Username");
+				 example["search"].focus();
+                 return false;
+             }
+             if (u=="decal xe may"){
+				alert("Tim thay 1 san pham");
+             	return true;
+			}
+		}
+	</script>
 </head>
 <body>
 
@@ -11,9 +25,9 @@
 	<img src="resouces/image/103285728_2643472922589372_3193530547220383538_n.jpg" alt=""><br>
 	
   <h1>LINH KIỆN XE MÁY</h1>
-  <form class="example" action="action_page.php">
+  <form class="example" action="decalxemay.html" onsubmit="return validateForm()">
 	    <button type="submit"><i class="fa fa-search"></i></button>
-  		<input type="text" placeholder="Tìm kiếm sản phẩm.." name="search">
+  		<input type="text" placeholder="Tìm kiếm sản phẩm.." id="search">
   		
 	</form>
 	
@@ -79,6 +93,9 @@
 	
 </div>
 <div class="footer">
+	<h3>DECAL TrungNhanPhong</h3>
+	<p>Đẹp trai thì mới có nhiều đứa yêu</p>
+	<p>Xe đẹp thì có nhiều đưa theo</p>
 </div>
 
 </body>

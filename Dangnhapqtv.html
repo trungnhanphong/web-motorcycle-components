@@ -21,7 +21,7 @@
 				  myForm["password"].focus();
                  return false;
              }
- 			if (u=="trungphongnhan" && p=="Decal123"){
+ 			if (u=="admin" && p=="Admin123"){
 				alert("Đăng nhập thành công");
              	return true;
 			}
@@ -39,15 +39,14 @@
         <header>
             <div class="container">
                 <a href="index.html">Trở về trang chủ</a>
-				<a href="Dangnhapqtv.html" style="float:right">Quản Trị Viên</a>
             </div>
 		
         </header>
         <main>
             <div class="container">
             <div class="login-form">
-                <form name="myForm" method="GET" action="muahang.html" onsubmit = "return validateForm()">
-                    <h1>Đăng nhập vào website</h1>
+                <form name="myForm" method="GET" action="admin.html" onsubmit = "return validateForm()">
+                    <h1>Quản Trị Viên</h1>
                     <div class="input-box">
                         <i ></i>
                         <input type="text" placeholder="Nhập username" id="username">
@@ -61,13 +60,7 @@
                             Đăng nhập
                         </button>
                     </div>
-					<p>(Nếu chưa có tài khoản)</p>
-					<div class="btn-box">
-                        
-                            <a href="dangki.html">Đăng kí</a>
-                        
-                    </div>
-                </form>
+				</form>
             </div>
             </div>
         </main>
